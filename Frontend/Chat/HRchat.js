@@ -61,7 +61,7 @@ export default function Chat({ route }) {
             textAlign: "center",
           }}
         >
-          EMPLOYEE LIST
+          EMPLOYEE LIST......
         </Text>
       </View>
 
