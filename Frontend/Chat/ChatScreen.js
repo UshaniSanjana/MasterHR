@@ -4,6 +4,7 @@ import { View, TextInput, Button, FlatList, Text, Alert } from "react-native";
 
 export default function ChatScreen({ route }) {
   const { employeeId } = route.params;
+  console.log(employeeId);
   const [messages, setMessages] = useState([]);
   const [newMessage, setNewMessage] = useState("");
 
@@ -13,9 +14,7 @@ export default function ChatScreen({ route }) {
 
   const fetchMessages = async () => {
     try {
-      const response = await fetch(
-        `http://192.168.1.16:3000/api/chat/${employeeId}`
-      );
+      const response = await fetch(`${process.env.API_URL}/chat/${employeeId}`);
       if (!response.ok) {
         throw new Error("Network response was not ok");
       }
@@ -30,7 +29,7 @@ export default function ChatScreen({ route }) {
   const sendMessage = async () => {
     try {
       const response = await fetch(
-        `http://192.168.1.16:3000/api/chat/${employeeId}`,
+        `${process.env.API_URL}/chat/${employeeId}`,
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },

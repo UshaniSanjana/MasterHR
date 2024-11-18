@@ -23,7 +23,7 @@ export default function Task({ route }) {
   const fetchData = async () => {
     try {
       const response = await fetch(
-        `http://192.168.1.16:3500/Employee/hr/${HR}`
+        `http://192.168.24.202:3500/Employee/hr/${HR}`
       );
       if (response.ok) {
         const data = await response.json();

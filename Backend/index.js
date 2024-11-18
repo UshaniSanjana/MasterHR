@@ -24,7 +24,7 @@ app.use("/Payment", PaymentRoute);
 app.use("/Attendance_record", Attendance_record_Router);
 app.use("/login", Login);
 app.use("/HR", HRroute);
-app.use("/api/chat", chatRoutes);
+app.use("/chat", chatRoutes);
 
 mongoose
   .connect("mongodb+srv://lakshan0714:lakshan123@hr.mb9wr19.mongodb.net/")

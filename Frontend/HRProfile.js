@@ -11,7 +11,7 @@ const HRProfile = ({ route }) => {
     const fetchEmployees = async () => {
       try {
         const response = await axios.get(
-          `http://192.168.1.16:3500/Employee/hr/${hrId}`
+          `http://192.168.24.202:3500/Employee/hr/${hrId}`
         );
         setEmployees(response.data);
       } catch (error) {

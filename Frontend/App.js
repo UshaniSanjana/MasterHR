@@ -24,6 +24,7 @@ import Daterange from "./PayRoll/Daterange";
 import PayRoll from "./PayRoll/PayRoll";
 import Performance1 from "./Performance/Performance1";
 import Task from "./Taskmangement/Task";
+import Mychat from "./EmpScreens/mychat";
 
 //colours "#2F284E", "#EEBBD5"
 //blue #0072b1
@@ -111,9 +112,9 @@ function Tab3({ route }) {
       />
 
       <Tab.Screen
-        name="Chat"
-        component={Chat}
-        initialParams={{ HR }}
+        name="mychat" //mycht
+        component={Mychat}
+        initialParams={HR}
         options={{
           tabBarLabel: "Chat",
           tabBarIcon: () => (
@@ -222,7 +223,7 @@ function Employee_stack({ route }) {
         component={EmpScreen}
         initialParams={{ HR }}
       />
-
+      <Stack.Screen name="mychat" component={Mychat} />
       <Stack.Screen name="Mark" component={Mark} />
       <Stack.Screen name="Loc" component={Loc} />
       <Stack.Screen name="ViewEmployee" component={ViewEmployee} />
