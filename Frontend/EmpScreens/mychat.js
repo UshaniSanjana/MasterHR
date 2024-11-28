@@ -126,7 +126,7 @@ export default function Mychat({ route }) {
           style={styles.input}
           value={newMessage}
           onChangeText={setNewMessage}
-          placeholder="Type a message..."
+          placeholder="Type a message....."
         />
         <TouchableOpacity onPress={sendMessage} style={styles.sendButton}>
           <Ionicons name="send" size={24} color="white" />
