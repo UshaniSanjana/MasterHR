@@ -79,8 +79,11 @@ export default function Chat({ route }) {
             alignItems: "center",
           }}
           onPress={() =>
-            navigation.navigate("ChatScreen", { employeeId: employee._id })
-          } // Navigate to ChatScreen
+            navigation.navigate("ChatScreen", {
+              employeeId: employee._id,
+              HR_Id: HR,
+            })
+          }
         >
           <View
             style={{
@@ -96,6 +99,7 @@ export default function Chat({ route }) {
                 uri: !employee ? "data:image/png;base64,..." : employee.image,
               }}
             />
+
             <View>
               <Text
                 style={{
