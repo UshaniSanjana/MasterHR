@@ -12,7 +12,7 @@ router.get("/:employeeId", async (req, res) => {
   }
 });
 
-// Send message
+// Send message router
 router.post("/:employeeId", async (req, res) => {
   try {
     const { text } = req.body;
