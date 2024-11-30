@@ -36,4 +36,4 @@ const HR=new mongoose.Schema(
 
 
 module.exports=mongoose.model("HR",HR)
-//mongodb HRschema
+
