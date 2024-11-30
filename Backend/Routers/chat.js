@@ -2,7 +2,7 @@ const express = require("express");
 const router = express.Router();
 const Chat = require("../Models/Chat");
 
-// Fetch messages
+// Fetch messages router
 router.get("/:employeeId", async (req, res) => {
   try {
     const chat = await Chat.findOne({ employeeId: req.params.employeeId });
