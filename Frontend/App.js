@@ -1,3 +1,4 @@
+//app.js file
 import { AntDesign, Ionicons, SimpleLineIcons } from "@expo/vector-icons";
 import { createMaterialBottomTabNavigator } from "@react-navigation/material-bottom-tabs";
 import { NavigationContainer } from "@react-navigation/native";
